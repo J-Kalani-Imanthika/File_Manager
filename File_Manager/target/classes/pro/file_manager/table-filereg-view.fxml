@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #1ABC9C;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pro.file_manager.TableFileController">
+   <children>
+      <AnchorPane fx:id="fxdd" layoutX="35.0" layoutY="80.0" opacity="0.73" prefHeight="480.0" prefWidth="683.0" style="-fx-background-color: yellow;">
+         <children>
+            <TableView fx:id="tablefilereg" layoutX="358.0" layoutY="125.0" prefHeight="200.0" prefWidth="300.0">
+               <columns>
+                  <TableColumn fx:id="txtid" prefWidth="75.0" text="ID" />
+                  <TableColumn fx:id="txtfn3" prefWidth="75.0" text="File_name" />
+                  <TableColumn fx:id="txtft3" prefWidth="75.0" text="File_type" />
+                  <TableColumn fx:id="txtl3" prefWidth="75.0" text="Location" />
+               </columns>
+            </TableView>
+            <Text layoutX="323.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="File Registration" textAlignment="CENTER" wrappingWidth="369.13671875">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="480.0" prefWidth="317.0" style="-fx-background-color: #005C53;">
+               <children>
+                  <Label layoutX="59.0" layoutY="22.0" prefHeight="62.0" prefWidth="251.0" text="File Manager" textFill="#012806">
+                     <font>
+                        <Font name="ArnoPro-Smbd" size="48.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="179.0" fitWidth="269.0" layoutX="24.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Button fx:id="btndelfr" layoutX="447.0" layoutY="387.0" mnemonicParsing="false" onAction="#DeleteFR" prefHeight="25.0" prefWidth="121.0" style="-fx-background-color: green;" text="Delete" />
+            <Button fx:id="btnrefre" layoutX="447.0" layoutY="353.0" mnemonicParsing="false" onAction="#RefreshFR" prefHeight="25.0" prefWidth="121.0" style="-fx-background-color: green;" text="Refresh" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

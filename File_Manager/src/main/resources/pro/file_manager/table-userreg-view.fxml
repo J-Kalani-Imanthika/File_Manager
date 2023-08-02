@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #1ABC9C;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pro.file_manager.TableUserController">
+   <children>
+      <AnchorPane fx:id="fxee" layoutX="13.0" layoutY="40.0" opacity="0.73" prefHeight="520.0" prefWidth="725.0" style="-fx-background-color: yellow;">
+         <children>
+            <TableView fx:id="tableureg" layoutX="16.0" layoutY="81.0" prefHeight="200.0" prefWidth="694.0">
+              <columns>
+                <TableColumn fx:id="txtid2" prefWidth="28.0" text="ID" />
+                <TableColumn fx:id="txtin" prefWidth="65.0" text="Initials" />
+                  <TableColumn fx:id="txtfn5" text="First Name" />
+                  <TableColumn fx:id="txtln5" prefWidth="70.0" text="Last Name" />
+                  <TableColumn fx:id="txtbd5" prefWidth="73.0" text="Birth Date" />
+                  <TableColumn fx:id="txtgen5" prefWidth="73.0" text="Gender" />
+                  <TableColumn fx:id="txtnic5" prefWidth="73.0" text="NIC" />
+                  <TableColumn fx:id="txtm5" prefWidth="83.0" text="Mobile" />
+                  <TableColumn fx:id="txte5" prefWidth="70.0" text="Email" />
+                  <TableColumn fx:id="txta5" prefWidth="75.0" text="Address" />
+              </columns>
+            </TableView>
+            <Label alignment="CENTER" layoutX="231.0" layoutY="-3.0" prefHeight="18.0" prefWidth="263.0" text="Regiustered Users">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="231.0" layoutX="174.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@360_F_339709134_9FKW6cgJi0uosfWb2bD4zdcerTvRvNXv.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="231.0" layoutX="399.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images%20(3).png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btndelfu" layoutX="375.0" layoutY="313.0" mnemonicParsing="false" onAction="#DeleteFU" prefHeight="28.0" prefWidth="121.0" style="-fx-background-color: green;" text="Delete" />
+            <Button fx:id="btnreru" layoutX="226.0" layoutY="313.0" mnemonicParsing="false" onAction="#RefreshRU" prefHeight="28.0" prefWidth="121.0" style="-fx-background-color: green;" text="Refresh" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

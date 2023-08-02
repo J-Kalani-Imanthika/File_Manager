@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #005C53;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pro.file_manager.LoginController">
+   <children>
+      <AnchorPane fx:id="fxb" layoutX="18.0" layoutY="6.0" prefHeight="577.0" prefWidth="720.0" style="-fx-background-color: #DBF227;">
+         <children>
+            <TextField fx:id="txtfn" layoutX="415.0" layoutY="59.0" prefHeight="25.0" prefWidth="203.0" promptText="First Name" />
+            <TextField fx:id="txtln" layoutX="415.0" layoutY="100.0" prefHeight="25.0" prefWidth="203.0" promptText="Last Name" />
+            <TextField fx:id="txtmn" layoutX="415.0" layoutY="141.0" prefHeight="25.0" prefWidth="203.0" promptText="mobile" />
+            <TextField fx:id="txte" layoutX="415.0" layoutY="182.0" prefHeight="25.0" prefWidth="203.0" promptText="Email" />
+            <TextField fx:id="txtpass" layoutX="415.0" layoutY="223.0" prefHeight="25.0" prefWidth="203.0" promptText="Password" />
+            <TextField fx:id="txtpass1" layoutX="415.0" layoutY="264.0" prefHeight="25.0" prefWidth="203.0" promptText="Re Enter Password" />
+            <Button fx:id="btnlog" layoutX="415.0" layoutY="357.0" mnemonicParsing="false" onAction="#Login_form" prefHeight="25.0" prefWidth="203.0" style="-fx-background-color: green;" text="Login" />
+            <Button fx:id="btnclear" layoutX="415.0" layoutY="397.0" mnemonicParsing="false" onAction="#Clear_form" prefHeight="25.0" prefWidth="203.0" style="-fx-background-color: green;" text="Clear" />
+            <TextField fx:id="txtfp" alignment="CENTER" layoutX="415.0" layoutY="493.0" prefHeight="25.0" prefWidth="203.0" style="-fx-background-color: #EE82EE;" text="Forgrt Password ? ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER" layoutX="456.0" layoutY="25.0" prefHeight="17.0" prefWidth="129.0" text="Please Login">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <AnchorPane opacity="0.96" prefHeight="580.0" prefWidth="336.0" style="-fx-background-color: #9FC131;">
+               <children>
+                  <Label layoutX="45.0" layoutY="14.0" prefHeight="62.0" prefWidth="283.0" text="File Manager" textAlignment="CENTER" textFill="#097918">
+                     <font>
+                        <Font name="ArnoPro-Smbd" size="48.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="228.0" fitWidth="247.0" layoutX="45.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imageedit_31_9533513024.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="224.0" fitWidth="366.0" layoutX="45.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imageedit_28_8959395948.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label fx:id="lbl1" layoutX="415.0" layoutY="42.0" prefHeight="17.0" prefWidth="203.0" />
+            <Label fx:id="lbl2" layoutX="415.0" layoutY="84.0" prefHeight="17.0" prefWidth="203.0" />
+            <Label fx:id="lbl3" layoutX="415.0" layoutY="125.0" prefHeight="17.0" prefWidth="203.0" />
+            <Label fx:id="lbl4" layoutX="415.0" layoutY="166.0" prefHeight="17.0" prefWidth="203.0" />
+            <Label fx:id="lbl5" layoutX="415.0" layoutY="207.0" prefHeight="17.0" prefWidth="203.0" />
+            <Label fx:id="lbl6" layoutX="415.0" layoutY="248.0" prefHeight="17.0" prefWidth="203.0" />
+            <Button fx:id="btnclose" layoutX="415.0" layoutY="437.0" mnemonicParsing="false" onAction="#Close_form" prefHeight="25.0" prefWidth="203.0" style="-fx-background-color: green;" text="Close" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
